@@ -27,6 +27,7 @@
 			<section class="features">
 				<h2 class="features-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
 				<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+				
 				<div class="features-item features-item-left">
 					<h3>Настоящий городок</h3>
 					<span>№1</span>
@@ -69,13 +70,35 @@
 					</li>
 				</ul>
 			</section>
-			<section class="hotel-search">
+			<section class="search">
 				<h2>Заинтересовались?</h2>
 				<p>Укажите предполагаемые даты поездки,<br> 
 				и мы покажем вам лучшие предложения гостиниц в седоне</p>
-				<div class="hotel-search-modal">
+				<div class="search-modal">
 					<h3>Поиск гостиницы в Седоне</h3>
-					<!-- Здесь будет форма -->
+					<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+						<p class="search-item">
+							<label for="search-check-in">Дата заезда:</label>
+							<input id="search-check-in" type="text" name="date-check-in" value="" placeholder="24 апреля 2017">
+							<button class="search-calendar" type="button">Календарь</button>
+						</p>
+						<p class="search-item">
+							<label for="search-check-out">Дата выезда:</label>
+							<input id="search-check-out" type="text" name="date-check-out" value="" placeholder="4 июля 2017">
+							<button class="search-calendar" type="button">Календарь</button>
+						</p>
+						<p class="search-item">
+							<label for="search-adult">Взрослые:</label>
+							<button class="add-remove" type="button" aria-label="Уменьшить количество взрослых">-</button>
+							<input id="search-adult" type="number" name="adult" value="2" min="1" max="5" step="1">
+							<button class="add-remove" type="button" aria-label="Увеличить количество взрослых">+</button>
+							<label for="search-children">Дети:</label>
+							<button class="add-remove" type="button" aria-label="Уменьшить количество детей">-</button>
+							<input id="search-children" type="number" name="children" value="0" min="0" max="5" step="1">
+							<button class="add-remove" type="button" aria-label="Увеличить количество детей">+</button>
+						</p>
+						<button class="button" type="submit">Найти</button>
+					</form>				
 				</div>
 			</section>
 		</main>
