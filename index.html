@@ -3,6 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Седона</title>
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 		<header class="main-header">
@@ -27,46 +30,47 @@
 			<section class="features">
 				<h2 class="features-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
 				<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-				
-				<div class="features-item features-item-left">
-					<h3>Настоящий городок</h3>
-					<span>№1</span>
-					<p>Седона — не атракцион для туристов, там течет своя жизнь</p>
-				</div>
-				<ul class="features-item features-item-sublist">
-					<li>
-						<h3>Жилье</h3>
-						<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+				<ul class="features-list">
+					<li class="features-item features-item-blue">
+						<h3>Настоящий городок</h3>
+						<span>№1</span>
+						<p>Седона — не атракцион для туристов, там течет своя жизнь</p>
 					</li>
-					<li>
-						<h3>Еда</h3>
-						<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+					<li class="features-item features-item-blue">
+						<h3>Там есть мост дьявола</h3>
+						<span>№2</span>
+						<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 					</li>
-					<li>
-						<h3>Сувениры</h3>
-						<p>Не только китайского, но и местного производства!</p>
-					</li>
-				</ul>
-				<div class="features-item features-item-right">
-					<h3>Там есть мост дьявола</h3>
-					<span>№2</span>
-					<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-				</div>
-				<ul class="features-item features-item-list">
-					<li>
+					<li class="features-item">
 						<h3>Небольшая площадь</h3>
 						<span>№3</span>
 						<p>Все достопримечательности находятся очень близко</p>
 					</li>
-					<li>
+					<li class="features-item">
 						<h3>Красивая дорога</h3>
 						<span>№4</span>
 						<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
 					</li>
-					<li>
+					<li class="features-item">
 						<h3>Мало туристов</h3>
 						<span>№5</span>
 						<p>Большинство едет в гранд каньон и толпится там</p>
+					</li>
+					<li class="features-item">
+						<ul class="more-features">
+							<li>
+								<h3>Жилье</h3>
+								<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+							</li>
+							<li>
+								<h3>Еда</h3>
+								<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+							</li>
+							<li>
+								<h3>Сувениры</h3>
+								<p>Не только китайского, но и местного производства!</p>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -75,7 +79,9 @@
 				<p>Укажите предполагаемые даты поездки,<br> 
 				и мы покажем вам лучшие предложения гостиниц в седоне</p>
 				<div class="search-modal">
-					<h3>Поиск гостиницы в Седоне</h3>
+					<a class="search-put" href="#">	
+						<h3>Поиск гостиницы в Седоне</h3>
+					</a>
 					<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
 						<p class="search-item">
 							<label for="search-check-in">Дата заезда:</label>
@@ -97,13 +103,15 @@
 							<input id="search-children" type="number" name="children" value="0" min="0" max="5" step="1">
 							<button class="add-remove" type="button" aria-label="Увеличить количество детей">+</button>
 						</p>
-						<button class="button" type="submit">Найти</button>
+						<p class="search-item">
+							<button class="search-button" type="submit">Найти</button>
+						</p>
 					</form>				
 				</div>
 			</section>
 		</main>
 		<footer class="main-footer">
-			<p>#visitsedona</p>
+			<p class="footer-visit">#visitsedona</p>
 			<div class="footer-social">
 				<ul>
 					<li>
