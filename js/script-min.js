@@ -1,0 +1,1 @@
+var button=document.querySelector(".search-put"),modal=document.querySelector(".search-form");button.addEventListener("click",function(e){e.preventDefault(),modal.classList.toggle("modal-close")});
