@@ -152,7 +152,7 @@ input[type="radio"].visually-hidden {
 	padding-top: 75px;
 	padding-bottom: 75px;
 
-	background-color: #ffffff;
+	background-color: #a1948b;
 	background-image: url(../img/background.jpg);
 	background-position: center -85px;
 	background-repeat: no-repeat;
@@ -241,6 +241,7 @@ input[type="radio"].visually-hidden {
 .features-item span::after {
 	content: '—';
 	display: inline-block;
+	vertical-align: middle;
 
 	margin: 0 5px;
 
@@ -491,12 +492,15 @@ input[type="radio"].visually-hidden {
 
 .search-container input {
 	display: inline-block;
+	vertical-align: top;
 	width: 54px;
 	text-align: center;
 }
 
 .search-container label {
 	display: inline-block;
+	vertical-align: middle;
+
 	margin-left: 54px;
 	margin-right: 27px;
 }
@@ -605,11 +609,12 @@ button.search-button {
 
 button.search-button:hover, 
 button.search-button:focus {
-	background-color: #669ec0	
+	background-color: #669ec0;	
 }
 
 button.search-button:active {
-	background-color: #5496bd
+	background-color: #5496bd;
+	color: rgba(255, 255, 255, 0.3);
 }
 
 .filters {
@@ -753,10 +758,10 @@ button.search-button:active {
 
 .price-controls label {
 	display: inline-block;
+	vertical-align: top;
 
 	font-size: 14px;
 	line-height: 38px;
-	vertical-align: top;
 
 	cursor: pointer;
 }
